@@ -78,14 +78,15 @@ async def get_script(update: Update, context: ContextTypes.DEFAULT_TYPE):
         script += "🔹 Scripts disponíveis:\n"
         
         # Organizar os botões lado a lado
-        # Agrupar os botões em pares para que fiquem lado a lado
+        # Agrupar os botões em várias colunas, independentemente da quantidade
         keyboard = []
         script_names = list(scripts.keys())
-        for i in range(0, len(script_names), 2):  # Passo 2 para agrupar os botões em pares
+        
+        # Vamos distribuir os botões em colunas de 3
+        for i in range(0, len(script_names), 3):  # Passo 3 para distribuir em colunas
             row = []
-            row.append(InlineKeyboardButton(script_names[i].capitalize(), callback_data=script_names[i]))
-            if i + 1 < len(script_names):  # Verificar se há um segundo botão para adicionar na mesma linha
-                row.append(InlineKeyboardButton(script_names[i + 1].capitalize(), callback_data=script_names[i + 1]))
+            for j in range(i, min(i + 3, len(script_names))):  # Verifica se há 3 itens para cada linha
+                row.append(InlineKeyboardButton(script_names[j].capitalize(), callback_data=script_names[j]))
             keyboard.append(row)
         
         script += "🔹 Clique abaixo para visualizar os scripts:\n"

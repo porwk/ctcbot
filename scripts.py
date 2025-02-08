@@ -94,8 +94,8 @@ scripts = {
        - Senha: 7&Acess@ ou !@#7aces
 
     **2. Roteadores ZTE, HAWAEI e alguns TP-Link (Compartilham Senha)**:
-       | Alternativa      | Usuário       | Senha         |
-       |------------------|---------------|---------------|
+       | Alternativa        | Usuário       | Senha         |
+       |--------------------|---------------|---------------|
        | **1ª Alternativa** | se77e         | !@#7aces      |
        | **2ª Alternativa** | se77e         | 7&Acess@      |
        | **3ª Alternativa** | telecomadmin  | admintelecom  |
