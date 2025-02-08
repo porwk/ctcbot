@@ -1,32 +1,4 @@
 scripts = {
-    "atendimento": """
-    Estrutura de Atendimento
-    - Saudação Inicial: (Ex.: "Sette Fibra - Consultor - nome. Bom dia/boa tarde/boa noite. Como posso ajudar?")
-    - Confirmação de Dados Cadastrais: CPF, sexo do titular, endereço, dois números de contato, WhatsApp, e-mail.
-    - Protocolo de Atendimento: Informar o protocolo ao cliente no início do atendimento.
-    - Tratativa da Solicitação:
-    - Interação Durante o Atendimento: Manter o cliente informado.
-    - Saudação Final: ("Posso ajudar em algo mais? A Sette Fibra agradece seu contato.")
-    """,
-
-    "principais": """
-    Principais Assuntos de Atendimento
-    - Sem Conexão: Identificar problemas no roteador, cabos, ou sinal.
-    - Lentidão: Atualizar roteador, testar dispositivos, e realizar teste de velocidade.
-    - Oscilações/Quedas: Gerar relatórios, verificar ONU, validar configurações.
-    - Alteração de Senha: Acessar roteador pelo IP e realizar ajustes.
-    - Sem Acesso a Aplicativos/Sites: Alterar DNS, testar em outra rede.
-    - Sem Acesso a Câmeras: Redirecionar portas, verificar IP fixo.
-    """,
-
-    "servicos": """
-    Serviços Disponíveis
-    - Atualização de plano.
-    - Upgrade ou downgrade de plano.
-    - Renovação contratual.
-    - Transferência de endereço.
-    """,
-
     "planos_atualizados_se77e": """
     🔗 [Planos Atualizados SE77E](https://app.clickup.com/36969994/docs/1387ga-6643/1387ga-9013)
     Clique no link acima para acessar as informações atualizadas sobre os planos.
@@ -34,15 +6,16 @@ scripts = {
 
     "transferencia_endereco": """
     **Transferência de Endereço**
-    - Endereço atual
-    - Novo endereço: CEP, Ponto de referência
-    - Valor da taxa
-    - Contato
-    - Protocolo
-    - Data do agendamento
+    - Novo endereço:
+    - CEP:
+    - Ponto de Referência:
+    - Contato do Responsável:
 
-    Observação: Solicitar ao cliente que leve os equipamentos para o novo endereço.
-    Taxa: R$ 100,00 à vista ou R$ 120,00 parcelado em até 4x.
+    💡 **Lembre-se:** Leve os equipamentos para o novo endereço para garantir a continuidade do serviço! 🏡
+
+    Taxa de transferência:
+    - À vista: R$ 100,00
+    - Parcelado em até 4x: R$ 120,00
     """,
 
     "juridico": """
@@ -51,17 +24,31 @@ scripts = {
     - 📞 62 93300-2036
     """,
 
+    "rh": """
+    **Recursos Humanos (RH)**
+    Para envio de currículos, entre em contato com o RH da Sette:
+    - 📞 62 93300-8494
+    """,
+
     "cancelamento": """
-    **Cancelamento**
-    Para realizar o cancelamento:
-    - Via WhatsApp: Selecione "Outras Opções" no atendimento automático.
-    - Via ligação: Ligue para 4051-9377 (departamento SAC).
+    **Cancelamento de Assinatura** 
+
+    Escolha como deseja proceder com o cancelamento:
+
+    1. **Via WhatsApp**: Selecione "Outras Opções" no atendimento automático.
+    2. **Via Ligação**: Ligue para 4051-9377 (departamento SAC).
+
+    **Lembre-se:** O setor responsável pelo atendimento está disponível de segunda a sexta-feira, das 08h às 18h, e aos sábados das 08h às 12h.
     """,
 
     "app_sette": """
     **Aplicativo Sette Fibra**
-    Você pode acessar todos os boletos na central do assinante pelo aplicativo Sette Fibra.
-    - Login e senha: Apenas os números do CPF ou CNPJ.
+    Baixe o nosso aplicativo para resolver tudo por lá!
+
+    - **Android**: [Clique aqui para baixar o aplicativo!](https://abrir.link/feCmF)
+    - **iOS**: [Clique aqui para baixar o aplicativo!](https://apps.apple.com/br/app/sette-fibra/id6711349663)
+
+    Acesse sua central do assinante diretamente do app e realize todas as operações necessárias com mais comodidade.
     """,
 
     "renovacao_contratual": """
@@ -79,97 +66,78 @@ scripts = {
     """,
 
     "los": """
-    LOS (Loss of Signal) - Aviso
-    Essa luz vermelha se chama LOS. Quando ela acende em vermelho, significa um problema físico na fibra (tanto interna quanto externa). 
-    As causas mais comuns incluem:
-    - Fibra rompida na rua;
-    - Conector danificado (pontinha verde conectada no equipamento);
-    - Outras questões físicas.
+    LOS (Loss of Signal) - O que isso significa?
+    Quando a luz do seu roteador fica vermelha e você vê a sigla **LOS**, significa que houve uma falha na conexão física da fibra ótica, que pode estar rompida ou com algum problema no conector.
 
-    Procedimento:
-    Poderia retirar o equipamento da tomada por 3 minutos, por gentileza?
+    **Como resolver?**
+    - Tente retirar o equipamento da tomada por 3 minutos e, depois, reconecte-o.
+    - Se o problema persistir, entre em contato com a nossa central de atendimento.
     """,
 
     "velocidade": """
-    Orientações para Teste de Velocidade
-    1. Durante o teste, deve haver apenas um aparelho conectado à rede. Caso contrário, outros dispositivos podem consumir banda e afetar o resultado.
-    2. Realizar o teste na rede 5G, próximo ao roteador. A rede 2.4G é limitada a 60 Mbps devido à sua tecnologia mais antiga.
-    - Caso a rede 5G não apareça, o dispositivo pode não ser compatível.
-    - Como alternativa, o teste pode ser feito com cabo de rede conectado ao PC ou notebook.
-    3. Certificar-se de que o aparelho suporta a velocidade contratada.
-    
-    Links para Teste:
-    - [Fast](https://fast.com/pt/)
-    - [SpeedTest](https://www.speedtest.net/pt)
+    **Orientações para Teste de Velocidade**
+
+    1. Desconecte outros dispositivos da sua rede, deixando apenas um conectado.
+    2. Abra o navegador e acesse um dos sites de teste de velocidade:
+       - [Teste no Fast.com](https://fast.com/pt/)
+       - [Teste no SpeedTest](https://www.speedtest.net/pt)
+    3. **Importante**: Realize o teste com a rede 5G, que oferece maior velocidade. A rede 2.4G tem limitações e pode não fornecer o desempenho esperado.
+    4. **Dica**: Se possível, faça o teste utilizando um cabo de rede diretamente no computador ou notebook para um resultado mais preciso.
+
+    Lembre-se de que o seu dispositivo também precisa ser compatível com a velocidade contratada.
     """,
 
-    "renovacao": """
-    Script de Renovação
-    Introdução: "Para atualizar seus dados, podemos confirmar algumas informações, por gentileza?"
-    - CPF: _____
-    - RG: ______
-    - Endereço completo: ______
-    - Telefone: ______
-    - E-mail: ______
+    "senhas_roteador": """
+    **Senhas de Roteador**
 
-    Encerramento: "O(a) Senhor(a) concorda com a assinatura de contrato/renovação por 12 meses?" (SIM/NÃO)
+    **1. Roteadores TP-Link**:
+       - Senha: 7&Acess@ ou !@#7aces
+
+    **2. Roteadores ZTE, HAWAEI e alguns TP-Link (Compartilham Senha)**:
+       | Alternativa      | Usuário       | Senha         |
+       |------------------|---------------|---------------|
+       | **1ª Alternativa** | se77e         | !@#7aces      |
+       | **2ª Alternativa** | se77e         | 7&Acess@      |
+       | **3ª Alternativa** | telecomadmin  | admintelecom  |
+       | **4ª Alternativa** | admintelecom  | telecomadmin  |
+       | **5ª Alternativa** | telecomadmin  | 7&Acess@      |
+       | **6ª Alternativa** | multipro      | multipro      |
     """,
 
-    "observacoes": """
-    Observações Gerais
-    - Todo atendimento é de responsabilidade do Contact Center.
-    - Transferências que exigem intervenção de outro setor são registradas no IXC.
-    - Chats e ligações só podem ser transferidos para cobrança em caso de renegociação ou para o SAC após tentativa de reversão.
+    "conectar_max": """
+    **Como Conectar ao Provedor Max**
+
+    1. Clique em "Conectar Provedor" no seu aplicativo ou painel.
+    2. Selecione o provedor **PLAYHUB**.
+    3. Preencha os campos com as informações abaixo:
+
+       - **Provedor**: SE77E
+       - **Código**: 
+       - **Senha**: 
+
+    Pronto! Agora você está conectado. Caso tenha alguma dificuldade, entre em contato com o suporte.
     """,
 
-    "configuracao_max": """
-    **Configuração MAX**
-    1. Clique em "Conectar Provedor".
-    2. Selecione o provedor PLAYHUB.
-    3. Preencha:
-       - Provedor: SE77E
-       - Código: 
-       - Senha:
-    """,
+    "Rede_mesh": """
+    Olá!
 
-    "valores_procedimentos": """
-    **Procedimentos**
-    - Atualização de Plano: R$ 5,00
-    - Renovação Contratual: R$ 5,00
-    - Troca de Titularidade: R$ 5,00
-    - Reversão de Cancelamento: R$ 5,00
-    - Venda À la Carte: R$ 3,50
+    Apresentamos o Extensor Wi-Fi Mesh da SETTE FIBRA, uma solução que melhora sua conexão Wi-Fi. Com a tecnologia Mesh, você terá uma rede unificada e sem quedas de sinal, eliminando as "zonas mortas" em sua casa ou empresa.
 
-    **Upgrade e Migração**
-    - 1 GB: R$ 9,00
-    - 750 MB: R$ 6,00
-    - 550 MB ou 600 MB: R$ 4,00
-    - 200 MB: R$ 1,50
+    Vantagens:
 
-    **Wireless Condomínio**
-    - 15 MB: R$ 1,50
-    - 25 MB: R$ 2,00
-    - 35 MB: R$ 3,00
-    - 50 MB: R$ 4,00
-    - 100 MB: R$ 8,00
+    Maior cobertura e estabilidade: O sinal chega em todos os pontos, sem falhas.
+    Sem quedas de conexão: Diferente dos repetidores, o Mesh mantém sua conexão estável ao trocar de ponto de acesso.
+    Detalhes:
 
-    **Plano Wireless**
-    - 7 MB: R$ 0,50
-    - 10 MB: R$ 2,00
-    - 15 MB: R$ 3,00
+    R$19,90 por ponto (mensal).
+    Instalação gratuita com visita técnica.
+    Roteadores obrigatoriamente cabeados.
+    Alternativa sem fidelidade: R$39,90 por ponto (sem renovação contratual).
 
-    **Obs:** Caso a meta não seja atingida, será pago 50% do valor de cada plano e serviço.
-    """,
+    Importante: A contratação do produto implica renovação contratual e a assinatura de um termo aditivo.
 
-    "formulario_contact_center": """
-    **Formulário Contact Center**
-    Acesse o formulário no link abaixo:
-    - [Formulário Contact Center](https://docs.google.com/forms/d/e/1FAIpQLSfdwHV1XU4t7Lxyzmuro3-4yMdZE8VgY-IVf8U6xG_PaeHzHQ/viewform)
-    """,
+    Se tiver interesse ou dúvidas, estamos à disposição para ajudar!
 
-    "downdetector": """
-    **Downdetector**
-    Consulte o status de serviços no Downdetector:
-    - [Downdetector](https://downdetector.com.br/)
+    Equipe SETTE FIBRA
     """
 }
