@@ -1,7 +1,9 @@
 import os
 import logging
+import time
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
+from typing import Dict
 
 # Configuração do logging
 logging.basicConfig(
@@ -10,15 +12,38 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Função para carregar os scripts a partir do arquivo scripts.py
-def load_scripts():
+# Variáveis globais para cache
+CACHE_TIME = 3600  # Cache expira em 1 hora (3600 segundos)
+cache = {
+    "scripts": None,
+    "last_updated": 0
+}
+
+# Função para carregar os scripts a partir do arquivo scripts.py com cache
+def load_scripts() -> Dict[str, str]:
+    current_time = time.time()
+    
+    # Verificar se o cache ainda é válido
+    if cache["scripts"] is not None and (current_time - cache["last_updated"]) < CACHE_TIME:
+        logger.info("✅ Usando cache de scripts.")
+        return cache["scripts"]
+    
+    # Se o cache expirou ou não existe, recarregar os scripts
     try:
-        # Supondo que o arquivo 'scripts.py' tenha um dicionário de scripts
         from scripts import scripts
+        if not isinstance(scripts, dict):
+            raise ValueError("O conteúdo de 'scripts.py' não é um dicionário válido.")
+        cache["scripts"] = scripts
+        cache["last_updated"] = current_time
+        logger.info("✅ Scripts carregados com sucesso e cache atualizado.")
         return scripts
     except ImportError:
         logger.error("❌ Não foi possível carregar o arquivo scripts.py. Verifique se o arquivo existe.")
-        return {}
+    except ValueError as e:
+        logger.error(f"❌ Erro ao verificar o conteúdo de 'scripts.py': {e}")
+    except Exception as e:
+        logger.error(f"❌ Ocorreu um erro desconhecido ao carregar 'scripts.py': {e}")
+    return {}
 
 # Função para lidar com o comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -52,11 +77,16 @@ async def get_script(update: Update, context: ContextTypes.DEFAULT_TYPE):
         script = "⚠️ Por favor, forneça o nome do script. Exemplo: /script script1\n\n"
         script += "🔹 Scripts disponíveis:\n"
         
-        # Criar botões clicáveis para os scripts
-        keyboard = [
-            [InlineKeyboardButton(script_name.capitalize(), callback_data=script_name)] 
-            for script_name in scripts.keys()
-        ]
+        # Organizar os botões lado a lado
+        # Agrupar os botões em pares para que fiquem lado a lado
+        keyboard = []
+        script_names = list(scripts.keys())
+        for i in range(0, len(script_names), 2):  # Passo 2 para agrupar os botões em pares
+            row = []
+            row.append(InlineKeyboardButton(script_names[i].capitalize(), callback_data=script_names[i]))
+            if i + 1 < len(script_names):  # Verificar se há um segundo botão para adicionar na mesma linha
+                row.append(InlineKeyboardButton(script_names[i + 1].capitalize(), callback_data=script_names[i + 1]))
+            keyboard.append(row)
         
         script += "🔹 Clique abaixo para visualizar os scripts:\n"
         await update.message.reply_text(
@@ -76,17 +106,20 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()  # Responder ao clique
     await query.edit_message_text(text=script)
 
-# Função principal para iniciar o bot
-def main():
-    # Testando o carregamento da variável de ambiente
+# Função para verificar variáveis de ambiente de maneira mais segura
+def check_environment_variables() -> str:
     token = os.getenv("TELEGRAM_BOT_TOKEN")
-    print(f"Token do bot: {token}")  # Isso deve exibir o token no terminal
-
     if not token:
         logger.error("❌ Token do bot não encontrado. Configure a variável de ambiente 'TELEGRAM_BOT_TOKEN'.")
+        raise ValueError("Token do bot não configurado")
+    return token
+
+# Função principal para iniciar o bot
+def main():
+    try:
+        token = check_environment_variables()  # Valida se o token foi configurado
+    except ValueError:
         return
-    else:
-        logger.info("✅ Token carregado com sucesso!")
 
     # Criação da aplicação do bot
     application = Application.builder().token(token).build()
