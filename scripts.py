@@ -1,143 +1,145 @@
 scripts = {
     "planos_atualizados_se77e": """
     🔗 [Planos Atualizados SE77E](https://app.clickup.com/36969994/docs/1387ga-6643/1387ga-9013)
-    Clique no link acima para acessar as informações atualizadas sobre os planos.
+    Acesse o link acima para conferir as informações mais recentes sobre os planos disponíveis.
     """,
 
     "transferencia_endereco": """
-    **Transferência de Endereço**
+    *Transferência de Endereço*
+    Para solicitar a mudança de endereço, preencha os seguintes dados:
+    
     - Novo endereço:
     - CEP:
-    - Ponto de Referência:
-    - Contato do Responsável:
-
-    💡 **Lembre-se:** Leve os equipamentos para o novo endereço para garantir a continuidade do serviço! 🏡
-
-    Taxa de transferência:
+    - Ponto de referência:
+    - Contato do responsável:
+    
+    💡 Importante: Leve os equipamentos para o novo endereço para garantir a continuidade do serviço! 🏡
+    
+    💰 Taxas de transferência:
     - À vista: R$ 100,00
     - Parcelado em até 4x: R$ 120,00
     """,
 
     "juridico": """
-    **Jurídico**
-    Segue número do Jurídico da Sette para clientes com contas bloqueadas que desejam fazer acordo:
+    *Setor Jurídico*
+    Para clientes com contas bloqueadas que desejam negociar um acordo, entre em contato com nosso setor jurídico:
     - 📞 62 93300-2036
     """,
 
     "rh": """
-    **Recursos Humanos (RH)**
-    Para envio de currículos, entre em contato com o RH da Sette:
+    *Recursos Humanos (RH)*
+    Para envio de currículos e dúvidas sobre processos seletivos, entre em contato com o RH:
     - 📞 62 93300-8494
     """,
 
     "cancelamento": """
-    **Cancelamento de Assinatura** 
-
-    Escolha como deseja proceder com o cancelamento:
-
-    1. **Via WhatsApp**: Selecione "Outras Opções" no atendimento automático.
-    2. **Via Ligação**: Ligue para 4051-9377 (departamento SAC).
-
-    **Lembre-se:** O setor responsável pelo atendimento está disponível de segunda a sexta-feira, das 08h às 18h, e aos sábados das 08h às 12h.
+    📢 *Cancelamento de Serviço*
+    Você pode solicitar o cancelamento pelos seguintes canais:
+    
+    1️⃣ WhatsApp: No atendimento automático, selecione "Outras Opções".
+    2️⃣ Telefone: Ligue para o SAC no número 4051-9377.
+    
+    🕒 Horário de atendimento:
+    - Segunda a sexta: 08h às 18h
+    - Sábado: 08h às 12h
     """,
 
     "app_sette": """
-    **Aplicativo Sette Fibra**
-    Baixe o nosso aplicativo para resolver tudo por lá!
-
-    - **Android**: [Clique aqui para baixar o aplicativo!](https://abrir.link/feCmF)
-    - **iOS**: [Clique aqui para baixar o aplicativo!](https://apps.apple.com/br/app/sette-fibra/id6711349663)
-
-    Acesse sua central do assinante diretamente do app e realize todas as operações necessárias com mais comodidade.
+    *Aplicativo Sette Fibra*
+    Baixe nosso aplicativo e resolva tudo com mais facilidade:
+    
+    - 📲 Android: [Baixar](https://abrir.link/feCmF)
+    - 🍏 iOS: [Baixar](https://apps.apple.com/br/app/sette-fibra/id6711349663)
+    
+    Acesse sua central do assinante diretamente pelo app para mais comodidade!
     """,
 
     "renovacao_contratual": """
-    **Renovação Contratual**
-    - Tipo de assinatura de contrato: (Aceite de voz / 100% digital)
-    - Quantos meses tem o contrato:
+    *Renovação Contratual*
+    Para renovar seu contrato, preencha as seguintes informações:
+    
+    - Tipo de assinatura: (Aceite de voz / 100% digital)
+    - Duração do contrato: (Quantos meses)
     - Data:
     - Hora:
     - Plano:
     - Valor:
-    - Tipo de cobrança: (Carnê / digital)
+    - Tipo de cobrança: (Carnê / Digital)
     - Contato:
     - Protocolo:
     - Atendente responsável:
     """,
 
     "los": """
-    LOS (Loss of Signal) - O que isso significa?
-    Quando a luz do seu roteador fica vermelha e você vê a sigla **LOS**, significa que houve uma falha na conexão física da fibra ótica, que pode estar rompida ou com algum problema no conector.
-
-    **Como resolver?**
-    - Tente retirar o equipamento da tomada por 3 minutos e, depois, reconecte-o.
-    - Se o problema persistir, entre em contato com a nossa central de atendimento.
+    *LOS (Loss of Signal) - Falha na Conexão*
+    Quando a luz do roteador fica vermelha e exibe a sigla LOS, isso indica uma falha na fibra óptica.
+    
+    🔧 Como resolver?
+    1. Desconecte o equipamento da tomada por 3 minutos e reconecte.
+    2. Caso o problema persista, nos avise aqui no chat para que possamos te ajudar! 📲
     """,
 
     "velocidade": """
-    **Orientações para Teste de Velocidade**
-
-    1. Desconecte outros dispositivos da sua rede, deixando apenas um conectado.
-    2. Abra o navegador e acesse um dos sites de teste de velocidade:
-       - [Teste no Fast.com](https://fast.com/pt/)
-       - [Teste no SpeedTest](https://www.speedtest.net/pt)
-    3. **Importante**: Realize o teste com a rede 5G, que oferece maior velocidade. A rede 2.4G tem limitações e pode não fornecer o desempenho esperado.
-    4. **Dica**: Se possível, faça o teste utilizando um cabo de rede diretamente no computador ou notebook para um resultado mais preciso.
-
-    Lembre-se de que o seu dispositivo também precisa ser compatível com a velocidade contratada.
+    *Teste de Velocidade*
+    Para obter um resultado preciso, siga estas orientações:
+    
+    1. Desconecte outros dispositivos da rede, deixando apenas um conectado.
+    2. Acesse um dos sites para testar a velocidade:
+       - 🌐 [Fast.com](https://fast.com/pt/)
+       - 🌐 [SpeedTest](https://www.speedtest.net/pt)
+    3. Dica: Utilize a rede 5G para um melhor desempenho.
+    4. Para um teste mais preciso, conecte seu computador via cabo de rede.
     """,
 
     "senhas_roteador": """
-    **Senhas de Roteador**
-
-    **1. Roteadores TP-Link**:
-       - Senha: 7&Acess@ ou !@#7aces
-
-    **2. Roteadores ZTE, HAWAEI e alguns TP-Link (Compartilham Senha)**:
-       | Alternativa        | Usuário       | Senha         |
-       |--------------------|---------------|---------------|
-       | **1ª Alternativa** | se77e         | !@#7aces      |
-       | **2ª Alternativa** | se77e         | 7&Acess@      |
-       | **3ª Alternativa** | telecomadmin  | admintelecom  |
-       | **4ª Alternativa** | admintelecom  | telecomadmin  |
-       | **5ª Alternativa** | telecomadmin  | 7&Acess@      |
-       | **6ª Alternativa** | multipro      | multipro      |
+    *Senhas Padrão para Roteadores*
+    
+    🔹 TP-Link: 7&Acess@ ou !@#7aces
+    
+    🔹 ZTE, Huawei e alguns TP-Link:
+    
+    | Alternativa        | Usuário      | Senha            |
+    |--------------------|--------------|------------------|
+    | 1ª Alternativa     | se77e        | !@#7aces         |
+    | 2ª Alternativa     | se77e        | 7&Acess@         |
+    | 3ª Alternativa     | telecomadmin | admintelecom     |
+    | 4ª Alternativa     | admintelecom | telecomadmin     |
+    | 5ª Alternativa     | telecomadmin | 7&Acess@         |
+    | 6ª Alternativa     | multipro     | multipro         |
     """,
 
     "conectar_max": """
-    **Como Conectar ao Provedor Max**
-
-    1. Clique em "Conectar Provedor" no seu aplicativo ou painel.
-    2. Selecione o provedor **PLAYHUB**.
-    3. Preencha os campos com as informações abaixo:
-
-       - **Provedor**: SE77E
-       - **Código**: 
-       - **Senha**: 
-
-    Pronto! Agora você está conectado. Caso tenha alguma dificuldade, entre em contato com o suporte.
+    *Conexão com o Provedor Max*
+    
+    Para conectar ao provedor, siga os passos abaixo:
+    
+    1️⃣ Acesse o aplicativo ou painel e clique em "Conectar Provedor".
+    2️⃣ Selecione PLAYHUB.
+    3️⃣ Insira as seguintes informações:
+    
+       - Provedor: SE77E
+       - Código:
+       - Senha:
+    
+    Caso tenha dúvidas, nos avise aqui no chat para que possamos te auxiliar! 🤝
     """,
 
-    "Rede_mesh": """
-    Olá!
-
-    Apresentamos o Extensor Wi-Fi Mesh da SETTE FIBRA, uma solução que melhora sua conexão Wi-Fi. Com a tecnologia Mesh, você terá uma rede unificada e sem quedas de sinal, eliminando as "zonas mortas" em sua casa ou empresa.
-
-    Vantagens:
-
-    Maior cobertura e estabilidade: O sinal chega em todos os pontos, sem falhas.
-    Sem quedas de conexão: Diferente dos repetidores, o Mesh mantém sua conexão estável ao trocar de ponto de acesso.
-    Detalhes:
-
-    R$19,90 por ponto (mensal).
-    Instalação gratuita com visita técnica.
-    Roteadores obrigatoriamente cabeados.
-    Alternativa sem fidelidade: R$39,90 por ponto (sem renovação contratual).
-
-    Importante: A contratação do produto implica renovação contratual e a assinatura de um termo aditivo.
-
-    Se tiver interesse ou dúvidas, estamos à disposição para ajudar!
-
-    Equipe SETTE FIBRA
+    "rede_mesh": """
+    *Extensor Wi-Fi Mesh - Sette Fibra*
+    
+    🔹 Vantagens:
+    - Maior cobertura e estabilidade de sinal.
+    - Conexão sem quedas ao trocar de ponto de acesso.
+    - Ideal para eliminar áreas com sinal fraco.
+    
+    💰 Planos:
+    - R$ 19,90/mês por ponto (contrato com fidelidade).
+    - R$ 39,90/mês por ponto (sem fidelidade).
+    
+    🚀 Instalação gratuita com visita técnica!
+    
+    🔹 Importante: A contratação implica em renovação contratual com assinatura de termo aditivo.
+    
+    Se tiver interesse, fale conosco aqui no chat! 📩
     """
 }
