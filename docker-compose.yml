@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  ctcbot:
+    container_name: ctcbot  # Nome do container
+    build: .  # Constrói a imagem a partir do Dockerfile
+    image: ctcbot  # Define o nome da imagem
+    environment:
+      TELEGRAM_BOT_TOKEN: "7559542443:AAGeE4VEvsvsQrYCOXv3Y5tdbWGFSrO7TSo"
+    volumes:
+      - .:/app  # Monta o diretório atual no container
+    working_dir: /app  # Define o diretório de trabalho dentro do container
+    command: python bot_telegram.py  # Comando para rodar o bot
+    restart: always  # Reinicia automaticamente em caso de falha
